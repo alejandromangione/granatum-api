@@ -1,4 +1,3 @@
-require 'granatum/version'
 require 'httparty'
 require 'uri'
 
