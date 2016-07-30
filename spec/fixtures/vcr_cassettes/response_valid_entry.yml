@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.granatum.com.br/v1/lancamentos?access_token=token
+    body:
+      encoding: US-ASCII
+      string: descricao=teste&conta_id=51070&categoria_id=480917&valor=10.00&data_vencimento=2016-07-30
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 30 Jul 2016 23:03:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '544'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Etag:
+      - '"5ddc0ccb71c65f8753e1e65500ac1099"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9f77e319-94e8-409c-9e06-d1666c2985be
+      X-Runtime:
+      - '0.044934'
+    body:
+      encoding: UTF-8
+      string: '{"id":17949391,"grupo_id":null,"lancamento_transferencia_id":null,"categoria_id":480917,"centro_custo_lucro_id":0,"tipo_custo_nivel_producao_id":0,"tipo_custo_apropriacao_produto_id":0,"conta_id":51070,"forma_pagamento_id":0,"pessoa_id":0,"tipo_lancamento_id":2,"descricao":"teste","tipo_documento_id":0,"documento":"","data_vencimento":"2016-07-30","valor":"10.0","data_pagamento":null,"data_competencia":"2016-07-30","observacao":"","pagamento_automatico":false,"numero_repeticao":1,"total_repeticoes":1,"periodicidade":null,"pedido_id":null}'
+    http_version: 
+  recorded_at: Sat, 30 Jul 2016 23:03:28 GMT
+recorded_with: VCR 3.0.3

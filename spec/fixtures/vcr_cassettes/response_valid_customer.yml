@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.granatum.com.br/v1/clientes?access_token=token
+    body:
+      encoding: US-ASCII
+      string: nome=teste&documento=24749752762
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 30 Jul 2016 22:48:51 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '348'
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Etag:
+      - '"8bc6b9b121104f34a85b5c051800f3b6"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 77ce3b22-a33b-4b86-855f-e607f98b2c1a
+      X-Runtime:
+      - '0.035953'
+    body:
+      encoding: UTF-8
+      string: '{"id":579128,"nome":"teste","nome_fantasia":null,"documento":"24749752762","inscricao_estadual":null,"inscricao_municipal":null,"telefone":null,"endereco":null,"endereco_numero":null,"endereco_complemento":null,"bairro":null,"cep":null,"cidade_id":null,"estado_id":null,"email":null,"observacao":null,"fornecedor":false,"estado":null,"cidade":null}'
+    http_version: 
+  recorded_at: Sat, 30 Jul 2016 22:48:51 GMT
+recorded_with: VCR 3.0.3

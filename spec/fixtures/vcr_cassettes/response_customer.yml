@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.granatum.com.br/v1/clientes?access_token=8c953409a379289cd99ba22ccbfef9e996d9457ebead020b2ada10bd58367172&documento=87626523202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.1.19
+      Date:
+      - Sat, 30 Jul 2016 23:08:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '278'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - '"009655e7ac648a1d64980fc968065375"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0d90d04c-4bf6-418d-b528-afe63f6754a9
+      X-Runtime:
+      - '0.030043'
+    body:
+      encoding: UTF-8
+      string: '[{"id":579126,"nome":"teste","nome_fantasia":null,"documento":"87626523202","telefone":null,"endereco":null,"endereco_numero":null,"endereco_complemento":null,"bairro":null,"cep":null,"cidade_id":null,"estado_id":null,"email":null,"observacao":null,"estado":null,"cidade":null}]'
+    http_version: 
+  recorded_at: Sat, 30 Jul 2016 23:08:01 GMT
+recorded_with: VCR 3.0.3
