@@ -6,7 +6,7 @@ Gem to connect on Granatum API
 
 Add this line to your application's Gemfile:
 
-gem 'granatum-api'
+gem 'granatum-api', git: 'git@github.com:alejandromangione/granatum-api.git', branch: 'master'
 
 And then execute:
 
@@ -15,14 +15,14 @@ $ bundle
 Or install it yourself as:
 
 ```
-$ gem install granatum-api to
+$ gem install granatum-api, git: 'git@github.com:alejandromangione/granatum-api.git', branch: 'master'
 ```
 
 ## Usage
 
 ```
 # cria uma conexão 
-granatum_api = Granatum::API::Connection.new("8c953409a379289cd99ba22ccbfef9e996d9457ebead020b2ada10bd58367172")
+granatum_api = Granatum::API::Connection.new("token")
 
 # verificar um cliente pelo cpf
 response = granatum_api.customer_by_cpf('07880447709')
